@@ -1,15 +1,6 @@
 var jogada = 1;
 var fim_x = true;
 var fim_o = true;
-var a1 = document.querySelector('input#a1').value;
-var a2 = document.querySelector('input#a2').value;
-var a3 = document.querySelector('input#a3').value;
-var b1 = document.querySelector('input#b1').value;
-var b2 = document.querySelector('input#b2').value;
-var b3 = document.querySelector('input#b3').value;
-var c1 = document.querySelector('input#c1').value;
-var c2 = document.querySelector('input#c2').value;
-var c3 = document.querySelector('input#c3').value;
 var all_buttons = document.querySelectorAll(".button-all");
 
 function iniciar() {
