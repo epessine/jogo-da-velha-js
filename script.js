@@ -11,7 +11,7 @@ function iniciar() {
     all_buttons.forEach(function(element){
         element.value = "";
     });
-    document.querySelector('div#jogada').innerText=`Turno do X`;
+    document.querySelector('div#jogada').innerText=`Bom jogo!`;
     document.querySelector('input#iniciar').value=`Jogar novamente!`;
 }
 
@@ -20,11 +20,11 @@ function clicou(botao) {
         if (jogada == 1) {
             botao.value = "X";
             jogada = 2;
-            document.querySelector('div#jogada').innerText="Turno do O";
+            document.querySelector('div#jogada').innerText="...";
         } else {
             botao.value = "O";
             jogada = 1;
-            document.querySelector('div#jogada').innerText="Turno do X";
+            document.querySelector('div#jogada').innerText="...";
         }
     }
     

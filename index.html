@@ -6,10 +6,12 @@
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 <body>
+    <div class="title"><h1>Jogo da Velha</h1></div>
     <div class="wrapper">
-        <div class="title"><h1>Jogo da Velha</h1></div>
+        
         <input type="button" value="Iniciar!" id="iniciar" onclick="iniciar()"><br>
         <div id="jogada">...</div>
         <div class="buttons">
@@ -24,49 +26,8 @@
             <input class="button-all" type="button" value="" id="c3" onclick="clicou(this);">
         </div>
     </div>
-
-   <!-- <script>
-        var jogada = 1
-        var a1 = document.querySelector('input#a1')
-        var a2 = document.querySelector('input#a2')
-        var a3 = document.querySelector('input#a3')
-        var b1 = document.querySelector('input#b1')
-        var b2 = document.querySelector('input#b2')
-        var b3 = document.querySelector('input#b3')
-        var c1 = document.querySelector('input#c1')
-        var c2 = document.querySelector('input#c2')
-        var c3 = document.querySelector('input#c3')
-        
-        function iniciar() {
-            var jogada = 1
-            a1.value = ""
-            document.querySelector('div#jogada').innerText=`Turno do X`
-            
-            
-        }
-        function clicoua1() {
-            if (jogada == 1) {
-                a1.value = "X"
-                if ((a1.value == "X" && a2.value == "X" && a3.value == "X") || (b1.value == "X" && b2.value == "X" && b3.value == "X") || (c1.value == "X" && c2.value == "X" && c3.value == "X") || (a1.value == "X" && b1.value == "X" && c1.value == "X") || (a2.value == "X" && b2.value == "X" && c2.value == "X") || (a3.value == "X" && b3.value == "X" && c3.value == "X") || (a1.value == "X" && b2.value == "X" && c3.value == "X") || (a3.value == "X" && b2.value == "X" && c1.value == "X")) {
-                    var fim = true
-                    document.querySelector('div#jogada').innerHTML=`<strong>O X venceu, parabéns!</strong>`
-                }
-                document.querySelector('div#jogada').innerText="Turno do O"
-                var jogada = 2
-            } else {
-                if (jogada == 2) {
-                    a1.value = "O"
-                    if ((a1.value == "O" && a2.value == "O" && a3.value == "O") || (b1.value == "O" && b2.value == "O" && b3.value == "O") || (c1.value == "O" && c2.value == "O" && c3.value == "O") || (a1.value == "O" && b1.value == "O" && c1.value == "O") || (a2.value == "O" && b2.value == "O" && c2.value == "O") || (a3.value == "O" && b3.value == "O" && c3.value == "O") || (a1.value == "O" && b2.value == "O" && c3.value == "O") || (a3.value == "O" && b2.value == "O" && c1.value == "O")) {
-                        var fim = true
-                        document.querySelector('div#jogada').innerHTML=`<strong>O círculo venceu, parabéns!</strong>`
-                    }
-                    var jogada = 1
-                    document.querySelector('div#jogada').innerText=`Turno do X`
-                }
-            }
-            
-        }
-        
-    </script> -->
+    <footer>
+        <h3>Por Eduardo Pessine</h3>
+    </footer>
 </body>
 </html>
